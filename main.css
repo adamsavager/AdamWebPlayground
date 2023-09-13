@@ -1,0 +1,75 @@
+
+
+/* Add your shared CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('0x0.webp'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-blend-mode: overlay; /* This blends the image and background color */
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    background-attachment: fixed;
+}
+
+
+
+header, nav, main, footer {
+    
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+ul {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+header {
+    color: brown;
+    margin: auto;
+    width: 50%; /* Adjust this value as needed */
+    text-align: center; /* Center the content horizontally */
+    position: relative; /* Enable absolute positioning for child elements */
+    top: 0px;
+}
+nav {
+    margin: auto;
+    width: 50%; /* Adjust this value as needed */
+    text-align: center; /* Center the content horizontally */
+    position: relative; /* Enable absolute positioning for child elements */
+    top: 0px;
+}
+c {
+    
+    display: block;
+    padding: 10px; /*Gap between top and bottom */
+    margin: auto;
+    width: 50%; /* Adjust this value as needed */
+    text-align: center; /* Center the content horizontally */
+    position: relative; /* Enable absolute positioning for child elements */
+    top: 300px;
+}
+main {
+    color: brown;
+    margin: auto;
+    width: 50%; /* Adjust this value as needed */
+    text-align: center; /* Center the content horizontally */
+    position: fixed; /* Enable absolute positioning for child elements */
+    top: 600px;
+    left: 0px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+}

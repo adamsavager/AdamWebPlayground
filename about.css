@@ -1,0 +1,68 @@
+
+
+/* Add your shared CSS styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(132, 199, 244, 0.5); /* Red with 50% transparency */
+}
+
+header, nav, main, footer {
+    
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+header {
+    margin: auto;
+    width: 50%; /* Adjust this value as needed */
+    text-align: center; /* Center the content horizontally */
+    position: relative; /* Enable absolute positioning for child elements */
+    top: 0px;
+}
+nav {
+    margin: auto;
+    width: 50%; /* Adjust this value as needed */
+    text-align: center; /* Center the content horizontally */
+    position: relative; /* Enable absolute positioning for child elements */
+    top: 0px;
+}
+ul {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: -50px;
+}
+c {
+    font-size: x-large;
+    display: block;
+    padding: 10px; /*Gap between top and bottom */
+    margin: auto;
+    width: 50%; /* Adjust this value as needed */
+    text-align: center; /* Center the content horizontally */
+    line-height: 1.8;
+    position: fixed; /* Enable absolute positioning for child elements */
+    top: 250px;
+    left: 0px;
+    right: 0px;
+}
+main {
+    margin: auto;
+    width: 50%; /* Adjust this value as needed */
+    text-align: center; /* Center the content horizontally */
+    position: fixed; /* Enable absolute positioning for child elements */
+    top: 600px;
+    left: 0px;
+    right: 0px;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+button {
+    padding: 10px 20px;
+}
