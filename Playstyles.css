@@ -1,0 +1,19 @@
+#canvas-container {
+    position: relative;
+    width: 70%;
+     /* Adjust the width as needed */
+}
+  
+  /* Style for the buttons */
+#buttons-container {
+  position: absolute;
+  display: flex; /* Use flex display to arrange buttons horizontally */
+  gap: 10px; /* Add some space between buttons */
+  right: 200px;
+  bottom: 50px; /* You can adjust the top position if needed */
+}
+
+/* Style for each button */
+button {
+  padding: 10px;
+}

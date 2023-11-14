@@ -1,75 +1,80 @@
-
-
-/* Add your shared CSS styles here */
 body {
     font-family: Arial, sans-serif;
-    background-image: url('0x0.webp'), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    background-blend-mode: overlay; /* This blends the image and background color */
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-    
-    background-attachment: fixed;
+    margin: 0;
+    overflow: hidden;
 }
 
-
-
-header, nav, main, footer {
-    
-    padding: 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-ul {
-    margin: auto;
-    text-align: center;
+#canvas-container {
     position: relative;
-    top: -50px;
-}
-header {
-    color: brown;
-    margin: auto;
-    width: 50%; /* Adjust this value as needed */
-    text-align: center; /* Center the content horizontally */
-    position: relative; /* Enable absolute positioning for child elements */
-    top: 0px;
-}
-nav {
-    margin: auto;
-    width: 50%; /* Adjust this value as needed */
-    text-align: center; /* Center the content horizontally */
-    position: relative; /* Enable absolute positioning for child elements */
-    top: 0px;
-}
-c {
-    
-    display: block;
-    padding: 10px; /*Gap between top and bottom */
-    margin: auto;
-    width: 50%; /* Adjust this value as needed */
-    text-align: center; /* Center the content horizontally */
-    position: relative; /* Enable absolute positioning for child elements */
-    top: 300px;
-}
-main {
-    color: brown;
-    margin: auto;
-    width: 50%; /* Adjust this value as needed */
-    text-align: center; /* Center the content horizontally */
-    position: fixed; /* Enable absolute positioning for child elements */
-    top: 600px;
-    left: 0px;
-    right: 0px;
 }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
+button#control-buttons {
+    transition-duration: 1s;
+    border-radius: 12px;
+    position: absolute;
+    cursor: pointer;
+    top: 10px; /* Adjust the top position as needed */
+    left: 10px; /* Adjust the left position as needed */
 }
 
-button {
-    padding: 10px 20px;
+button#control-buttond {
+   
+    transition-duration: 1s;
+    border-radius: 12px;
+    position: absolute;
+    cursor: pointer;
+    top: 10px; /* Adjust the top position as needed */
+    left: 130px; /* Adjust the left position as needed */
+}
+button#back-menu{
+    transition-duration: 1s;
+    border-radius: 12px;
+    position: absolute;
+    cursor: pointer;
+    top: 10px; /* Adjust the top position as needed */
+    left: 250px; /* Adjust the left position as needed */
+
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
+}
+
+h1 {
+    cursor: none;
+    position: absolute;
+    left: 500px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; /* To make it repeat */
+    animation-timing-function: ease-in-out; /* Optional: smoother timing */
+}
+button#control-buttond:hover {
+    background-color: #fb3030; /* Green */
+    color: white;
+}
+button#control-buttons:hover {
+    background-color: #0bf61b; /* Green */
+    color: rgb(8, 0, 0);
+}
+button#back-menu:hover{
+    background-color: aqua;
+    color: black;
+}
+#display-count {
+    color: aliceblue;
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+    font-size: 18px;
 }
